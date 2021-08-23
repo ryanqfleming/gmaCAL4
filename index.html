@@ -50,17 +50,17 @@ themeSystem: 'bootstrap',
       },
 
       {
-        title: 'Snack Attack Days',
-        start: '2021-08-26T14:00',
-        end:'2021-08-26T16:00',
+        title: 'Snack Attack Outbound Days First Break 10:40',
+        start: '2021-08-26T10:40',
+        end:'2021-08-26T11:00',
         color: 'blue',
         display: 'block',
       },
       {
-        title: 'Snack Attack Nights',
-        start: '2021-08-26T18:00',
-        end:'2021-08-26T12:00',
-        color: 'Darkblue',
+        title: 'Snack Attack Inbound Days First Break 11:30',
+        start: '2021-08-26T11:30',
+        end:'2021-08-26T11:50',
+        color: 'blue',
         display: 'block',
       },
 
@@ -90,6 +90,12 @@ themeSystem: 'bootstrap',
    
       
     ],
+
+  eventClick: function(info) {
+    alert('Clicked on: ' + info.event.title);
+    
+  },
+    
     eventContent: function(arg) {
                 let arrayOfDomNodes = []
                 // title event
