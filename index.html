@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek'
+    },
+    businessHours: {
+  // days of week. an array of zero-based day of week integers (0=Sunday)
+  daysOfWeek: [ 1, 2, 3, 4 ], // Monday - Thursday
+
+  startTime: '00:00', // a start time (10am in this example)
+  endTime: '24:00', // an end time (6pm in this example)
+},
+    events: [
+      {
+        title: 'test Event',
+        start: '2021-08-30'
+      },
+      {
+        title: 'test Event2',
+        start: '2021-08-30'
+      },
+      {
+        title: 'test 2 event',
+        start: '2021-07-07',
+        end: '2021-07-10'
+      },
+      {
+        groupId: '999',
+        title: 'Repeating Event',
+        start: '2021-07-09T16:00:00',
+        
+      },
+
+      {
+        title: 'Snack Attack Days',
+        start: '2021-08-26T14:00',
+        end:'2021-08-26T16:00',
+        color: 'blue',
+        display: 'block',
+      },
+      {
+        title: 'Snack Attack Nights',
+        start: '2021-08-26T18:00',
+        end:'2021-08-26T12:00',
+        color: 'Darkblue',
+        display: 'block',
+      },
+
+      {
+        title: 'Womens Equality Day',
+        start: '2021-08-26',
+        image_url: 'images/womensequality.jpeg',
+        color: 'purple',
+        allDay:'false',
+      },
+      {
+      title: '',
+        start: '2021-08-26',
+        image_url: 'images/snackattack.png',
+        color: 'purple',
+        allDay:'false',
+      },
+      {
+        start:'2021-08-26T00:00',
+        end:'2021-08-26T24:00',
+        display:'background',
+        color: 'purple',
+    
+      },
+
+      
+   
+      
+    ],
+    eventContent: function(arg) {
+                let arrayOfDomNodes = []
+                // title event
+                let titleEvent = document.createElement('div')
+                if(arg.event._def.title) {
+                  titleEvent.innerHTML = arg.event._def.title
+                  titleEvent.classList = "fc-event-title fc-sticky"
+                }
+    
+                // image event
+                let imgEventWrap = document.createElement('div')
+                if(arg.event.extendedProps.image_url) {
+                  let imgEvent = '<img src="'+arg.event.extendedProps.image_url+'" width="100%" height="100%">'
+                  imgEventWrap.classList = "fc-event-img"
+                  imgEventWrap.innerHTML = imgEvent;
+                  
+                  
+                }
+    
+                arrayOfDomNodes = [ titleEvent,imgEventWrap ]
+    
+                return { domNodes: arrayOfDomNodes }
+              },
+  });
+
+  calendar.render();
+});
+
+    </script>
+  </head>
+  <body>
+    <div id='calendar'></div>
+  </body>
+</html>
