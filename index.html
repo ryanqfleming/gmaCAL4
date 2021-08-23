@@ -3,6 +3,8 @@
   <head>
     <meta charset='utf-8' />
     <link href='fullcalendar/main.css' rel='stylesheet' />
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.css' rel='stylesheet' />
+<link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css' rel='stylesheet'>
     <script src='fullcalendar/main.js'></script>
     <script>
 
@@ -18,11 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     businessHours: {
   // days of week. an array of zero-based day of week integers (0=Sunday)
-  daysOfWeek: [ 1, 2, 3, 4 ], // Monday - Thursday
+  daysOfWeek: [ 0, 1, 2, 3, 4, 5, 6, ], // Monday - Thursday
 
   startTime: '00:00', // a start time (10am in this example)
   endTime: '24:00', // an end time (6pm in this example)
 },
+themeSystem: 'bootstrap',
     events: [
       {
         title: 'test Event',
