@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
-    height: 'auto',
+    height: "80vh",
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
@@ -81,7 +81,7 @@ themeSystem: 'bootstrap',
         color: 'purple',
         allDay:'false',
         extendedProps: {
-            description: 'Celibrate Womens Equality Day with us at SMF7. Take a moment to remember that we are still fighting for equal pay and other rights',
+            description: 'Wear Purple to celebrate Women’s Equality Day with us at SMF7. Take a moment to remember and appreciate all the women and their hard work that make our lives possible. ',
         },
       },
       {
@@ -101,16 +101,17 @@ themeSystem: 'bootstrap',
         color: 'purple',
     
       },
+      //beginning of september
       {
-        start:'2021-09-14T00:00',
-        end:'2021-09-15T24:00',
+        start:'2021-09-12T00:00',
+        end:'2021-09-18T24:00',
         display:'background',
         color: 'gold',
     
       },
       {
-        start:'2021-09-14',
-        end:'2021-09-16',
+        start:'2021-09-12',
+        end:'2021-09-19',
         display:'background',
         color: 'gold',
       },
@@ -121,12 +122,12 @@ themeSystem: 'bootstrap',
         color: 'darkgold',
         allDay:'false',
         extendedProps: {
-            description: 'Amazon Goes Gold is a week long event where we reconise that children fighting childhood cancer can spend years wearing their pajamas. Lets spend the 14th and 15 in our PJs in respect for these children',
+            description: 'Amazon Goes Gold is a monthlong event where we recognize that children fighting childhood cancer can spend years wearing their pajamas. Let’s spend the 14th and 15 in our PJs in respect for these children. This year amazon will be hosting Camp Amazon! A program that children patients can partake in to feed their curiosities and grow their knowledge. ',
         },
       },
       {
       title: '',
-        start: '2021-09-14',
+        start: '2021-09-17',
         image_url: 'images/snackattack.png',
         color: 'darkgold',
         allDay:'false',
@@ -151,7 +152,7 @@ themeSystem: 'bootstrap',
         color: 'darkgold',
         allDay:'false',
         extendedProps: {
-            description: 'Amazon Goes Gold is a week long event where we reconise that children fighting childhood cancer can spend years wearing their pajamas. Lets spend the 14th and 15 in our PJs in respect for these children',
+            description: 'Amazon Goes Gold is a monthlong event where we recognize that children fighting childhood cancer can spend years wearing their pajamas. Let’s spend the 14th and 15 in our PJs in respect for these children. This year amazon will be hosting Camp Amazon! A program that children patients can partake in to feed their curiosities and grow their knowledge. ',
         },
       },
       {
@@ -161,13 +162,13 @@ themeSystem: 'bootstrap',
         color: 'darkgold',
         allDay:'false',
         extendedProps: {
-            description: 'Amazon Goes Gold is a week long event where we reconise that children fighting childhood cancer can spend years wearing their pajamas. Lets spend the 14th and 15 in our PJs in respect for these children',
+            description: 'Amazon Goes Gold is a monthlong event where we recognize that children fighting childhood cancer can spend years wearing their pajamas. Let’s spend the 14th and 15 in our PJs in respect for these children. This year amazon will be hosting Camp Amazon! A program that children patients can partake in to feed their curiosities and grow their knowledge. ',
         },
       },
       {
         title: 'Snack Attack Outbound Days First Break 10:40',
-        start: '2021-09-14T10:40',
-        end:'2021-09-14T11:00',
+        start: '2021-09-17T10:40',
+        end:'2021-09-17T11:00',
         color: 'blue',
         display: 'block',
         extendedProps: {
@@ -176,8 +177,8 @@ themeSystem: 'bootstrap',
       },
       {
         title: 'Snack Attack Inbound Days First Break 11:30',
-        start: '2021-09-14T11:30',
-        end:'2021-09-14T11:50',
+        start: '2021-09-17T11:30',
+        end:'2021-09-17T11:50',
         color: 'blue',
         display: 'block',
         extendedProps: {
@@ -186,8 +187,8 @@ themeSystem: 'bootstrap',
       },
       {
         title: 'Snack Attack Outbound Nights First Break 20:00',
-        start: '2021-09-14T20:00',
-        end:'2021-09-14T20:20',
+        start: '2021-09-17T20:00',
+        end:'2021-09-17T20:20',
         color: 'blue',
         display: 'block',
         extendedProps: {
@@ -196,8 +197,8 @@ themeSystem: 'bootstrap',
       },
       {
         title: 'Snack Attack Inbound Nights First Break 20:30',
-        start: '2021-09-14T20:30',
-        end:'2021-09-14T20:50',
+        start: '2021-09-17T20:30',
+        end:'2021-09-17T20:50',
         color: 'blue',
         display: 'block',
         extendedProps: {
@@ -252,10 +253,151 @@ themeSystem: 'bootstrap',
         extendedProps: {
             description: 'Wear Red to Remember the Fallen Fire Fighters and First Responders of the 9/11 Terrorst Attacks',
         },
-      
       },
-      
-   
+      {
+      title: 'Amzn Swag',
+        start: '2021-09-28',
+        image_url: 'images/swagshirt.jpeg',
+        color: 'red',
+        extendedProps: {
+            description: 'Got amazon Swag from Past Events? Today is the day to fluant it! TOGETHER!',
+        },
+      },
+      {
+      title: 'Amzn Swag',
+        start: '2021-09-30',
+        image_url: 'images/swagshirt.jpeg',
+        color: 'red',
+        extendedProps: {
+            description: 'Got amazon Swag from Past Events? Today is the day to fluant it! TOGETHER!',
+        },
+      },
+      {
+      title: 'Labor Day',
+        start: '2021-09-06',
+        image_url: 'images/laborday.jpeg',
+        color: 'red',
+        extendedProps: {
+            description: 'Labor Day is a paid holiday! You will be paid your regular pay rate for 8 hours regardless if you work on labor day or not! Those that work on labor day will be paid time and a half + the 8 hours of pay.',
+        },
+      },
+      {
+      title: 'Crazy Sock Day',
+        start: '2021-09-08',
+        image_url: 'images/crazysocks.jpg',
+        color: 'red',
+        extendedProps: {
+            description: 'Who here has the most crazy socks? We will find out TODAY!',
+        },
+      },
+      {
+      title: 'Crazy Sock Day',
+        start: '2021-09-10',
+        image_url: 'images/crazysocks.jpg',
+        color: 'red',
+        extendedProps: {
+            description: 'Who here has the most crazy socks? We will find out TODAY!',
+        },
+      },
+      {
+      title: 'Wacky Hair Day',
+        start: '2021-09-21',
+        image_url: 'images/WackyHair.jpeg',
+        color: 'red',
+        extendedProps: {
+            description: 'Got Wacky Hair? So do we!',
+        },
+      },
+      {
+      title: 'Wacky Hair Day',
+        start: '2021-09-23',
+        image_url: 'images/WackyHair.jpeg',
+        color: 'red',
+        extendedProps: {
+            description: 'Got Wacky Hair? So do we!',
+        },
+      },
+      //Snack attacks for end of month
+      {
+        title: 'Snack Attack Outbound Days First Break 10:40',
+        start: '2021-09-28T10:40',
+        end:'2021-09-28T11:00',
+        color: 'blue',
+        display: 'block',
+        extendedProps: {
+            description: 'Snack Attacks are free snacks in the main breakroom during your first break of the day',
+        },
+      },
+      {
+        title: 'Snack Attack Inbound Days First Break 11:30',
+        start: '2021-09-28T11:30',
+        end:'2021-09-28T11:50',
+        color: 'blue',
+        display: 'block',
+        extendedProps: {
+            description: 'Snack Attacks are free snacks in the main breakroom during your first break of the day',
+        },
+      },
+      {
+        title: 'Snack Attack Outbound Nights First Break 20:00',
+        start: '2021-09-28T20:00',
+        end:'2021-09-28T20:20',
+        color: 'blue',
+        display: 'block',
+        extendedProps: {
+            description: 'Snack Attacks are free snacks in the main breakroom during your first break of the day',
+        },
+      },
+      {
+        title: 'Snack Attack Inbound Nights First Break 20:30',
+        start: '2021-09-28T20:30',
+        end:'2021-09-28T20:50',
+        color: 'blue',
+        display: 'block',
+        extendedProps: {
+            description: 'Snack Attacks are free snacks in the main breakroom during your first break of the day',
+        },
+      },
+      {
+        title: 'Snack Attack Outbound Days First Break 10:40',
+        start: '2021-09-30T10:40',
+        end:'2021-09-30T11:00',
+        color: 'blue',
+        display: 'block',
+        extendedProps: {
+            description: 'Snack Attacks are free snacks in the main breakroom during your first break of the day',
+        },
+      },
+      {
+        title: 'Snack Attack Inbound Days First Break 11:30',
+        start: '2021-09-30T11:30',
+        end:'2021-09-30T11:50',
+        color: 'blue',
+        display: 'block',
+        extendedProps: {
+            description: 'Snack Attacks are free snacks in the main breakroom during your first break of the day',
+        },
+      },
+      {
+        title: 'Snack Attack Outbound Nights First Break 20:00',
+        start: '2021-09-30T20:00',
+        end:'2021-09-30T20:20',
+        color: 'blue',
+        display: 'block',
+        extendedProps: {
+            description: 'Snack Attacks are free snacks in the main breakroom during your first break of the day',
+        },
+      },
+      {
+        title: 'Snack Attack Inbound Nights First Break 20:30',
+        start: '2021-09-30T20:30',
+        end:'2021-09-30T20:50',
+        color: 'blue',
+        display: 'block',
+        extendedProps: {
+            description: 'Snack Attacks are free snacks in the main breakroom during your first break of the day',
+        },
+      },
       
     ],
 
