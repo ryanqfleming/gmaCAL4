@@ -39,3 +39,9 @@
 .fc .fc-toolbar-title {
     font-size: 0.8em;
 }
+
+@media only screen and (min-width: 1000px) {
+    .fc .fc-toolbar-title {
+        font-size: 1.8em;
+    }
+  }
