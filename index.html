@@ -317,6 +317,15 @@ themeSystem: 'bootstrap',
             description: 'Got Wacky Hair? So do we!',
         },
       },
+      {
+      title: 'Kind Acts',
+        start: '2021-09-01',
+        image_url: 'images/actsofkind.jpeg',
+        color: 'red',
+        extendedProps: {
+            description: 'Lets go out of our way and some someone a bit of kindness. You never can know what someone is going through and being kind can improve someones day',
+        },
+      },
       //Snack attacks for end of month
       {
         title: 'Snack Attack Outbound Days First Break 10:40',
@@ -402,8 +411,15 @@ themeSystem: 'bootstrap',
     ],
 
   eventClick: function(info) {
+      console.log(info.event.extendedProps.description)
     //alert('Event information: ' + info.event.extendedProps.description);
-    document.getElementById("lilMarg").innerHTML = info.event.extendedProps.description;
+    if (info.event.extendedProps === "") {
+        
+        document.getElementById("lilMarg").innerHTML = 'scroll The Calender to See More and Tap on an Event to find out more!';
+    } else {
+        
+        document.getElementById("lilMarg").innerHTML = info.event.extendedProps.description;
+    }
   },
   
     
