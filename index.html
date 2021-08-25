@@ -413,13 +413,10 @@ themeSystem: 'bootstrap',
   eventClick: function(info) {
       console.log(info.event.extendedProps.description)
     //alert('Event information: ' + info.event.extendedProps.description);
-    if (info.event.extendedProps.description = "undefined") {
-        
-        document.getElementById("lilMarg").innerHTML = 'scroll The Calender to See More and Tap on an Event to find out more!';
-    } else {
+   
         
         document.getElementById("lilMarg").innerHTML = info.event.extendedProps.description;
-    }
+    
   },
   
     
